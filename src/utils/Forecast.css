@@ -1,0 +1,63 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.slider{
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+
+.slider h1{
+     margin:0px 0 0 16px;
+     font-size: 26px;
+     color: rgb(54, 54, 54);
+    font-family: 'Montserrat';
+}
+.slider .sliderHeading h4{
+    font-family: 'Montserrat';
+}
+.slider h4 a{
+    text-decoration: none;
+    color:#5c93f3 ;
+}
+.slider .sliderHeading{
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+}
+.slider .box{
+    height: 200px;
+    margin-top: 0;
+    background-color: white;
+    /* box-shadow: 0 20px 40px rgb(64 60 67 / 16%); */
+    box-shadow: 8px 12px 30px -12px rgb(179, 179, 179);
+    transform: scale(0.7);
+    text-align: center;
+    border-radius: 60px;
+}
+.slick-slide img{
+    display: inline;
+}
+.slider .box img{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+.slider .box h2{
+    padding-top: 15px;
+    font-size: 17px;
+}
+.slider .box h1,h2{
+    margin: 0;
+    padding: 0;
+    color: rgb(185, 185, 185);
+}
+@media screen and (max-width:320px){
+    .slider .box img{
+        width: 80px;
+        height:80px;
+    }
+    .slider .box h2{
+        padding-top:30px ;
+    }
+}

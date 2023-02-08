@@ -1,0 +1,194 @@
+.FiveDays{
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #ccc;
+}
+.compo{
+     width: 414px;
+     height:736px;
+     display: flex;
+     background-color: white;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 3px;
+}
+.compo .weatherDetails{
+     width: 96%;
+     margin: 6px;
+     height: 47%;
+     border-radius: 25px;
+     background-color: #5c93f3;
+     box-sizing: border-box;
+     box-shadow: 0px 20px 5px -10px #91c8ec;
+} 
+.compo .weatherDetails .div0{
+     margin: 20px;
+}
+.compo .weatherDetails .div1,.div2{
+     display: flex;
+     align-items: center;
+     
+}
+.div2{
+     justify-content: space-between;
+     margin: 20px 5px;
+     font-family: 'Montserrat';
+}
+.div2 .cloudsImg img{
+     width: 130px;
+     height: 130px;
+      
+      
+}
+.txt h1,h3,p{
+margin: 0;
+letter-spacing: 0.06rem;
+font-size: 20px;
+color: rgb(233, 233, 233);
+}
+.compo .weatherDetails .div2 .txt h1{
+     font-size: 70px;
+     color: white;
+     letter-spacing: .5rem;
+}
+.compo .weatherDetails .backArrow{
+     border: 1px solid white; 
+     display:inline-flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 60px;
+     height: 20px;
+     padding: 10px;
+     cursor: pointer;
+}
+.compo .weatherDetails .nextFiveDays{
+     position: relative;
+     left: 15%;
+     color: white;
+     font-size: 10px;
+     font-family: 'Montserrat';
+}
+.compo .weatherDetails .nextFiveDays h1{
+     margin: 0;
+}
+.windDetails{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: white;
+     padding: 15px;
+     border-radius: 20px;
+      
+}
+.windDetails .wind1 img,.humidity1 img,.pressure1 img{
+width: 30px;
+height: 30px;
+}
+.wind1,.humidity1,.pressure1{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:  center;
+}
+.wind1 span,.humidity1 span,.pressure1 span{
+     margin-top: 7px;
+     color: grey;
+     font-weight: bold;
+     font-family: 'Montserrat';
+}
+.fiveDaysDetails{
+     height: 53%;
+     width: 96%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+.fiveDaysDetails .mon{
+     display: flex;
+     justify-content: space-between;
+     margin: 20px;
+}
+.fiveDaysDetails .mon h4{
+     margin:0;
+      
+}
+.mon h2{
+     color: rgb(49, 49, 49);
+     font-size: 17px;
+     font-family: 'Montserrat';
+}
+.common{
+     display: flex;
+     align-items: center;
+}
+.common img{
+     margin-right: 10px;
+     width: 35px;
+     height: 35px;
+}
+.common h4{
+     color: rgb(139, 139, 139);
+     font-family: 'Montserrat';
+}
+
+/* Responsive using media query */
+@media screen and (max-width:360px){
+     .compo{
+          width: 360px;
+          height: 640px;
+     }
+     .fiveDaysDetails{
+          margin-top: 30px;
+     }
+     .windDetails{
+           margin-top:-30px;
+     }
+     .txt h1,h3,p{
+          font-size: 15px;
+     } 
+      .div2{
+           margin-top: 0;
+      }
+     .compo .weatherDetails .div2 .txt h1{
+          font-size: 40px;
+     }
+}
+@media screen and (max-width:320px) {
+     .compo{
+          width: 320px;
+          height: 568px;
+     }
+     .windDetails{
+          margin-top:-45px;
+    }
+    .txt h1,h3,p{
+     font-size: 12px;
+    } 
+    .compo .weatherDetails .div2 .txt h1{
+     font-size: 30px;
+    }
+  
+}
+@media screen and (max-width:376px){
+     .compo{
+          width: 375px;
+          height:667px;
+     }
+     .windDetails{
+          margin-top:-30px;
+    }
+    .txt h1,h3,p{
+     font-size: 15px;
+    } 
+    .compo .weatherDetails .div2 .txt h1{
+     font-size: 40px;
+    }
+    .fiveDaysDetails{
+     margin-top: 25px;
+}
+}
+ 
+ 

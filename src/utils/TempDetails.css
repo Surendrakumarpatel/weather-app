@@ -1,0 +1,64 @@
+.tempDet{
+    width: 92%;
+    height:22%;
+    border-radius: 20px;
+    /* box-shadow: 0 3px 20px #5c93f3; */
+    box-shadow: 0 20px 30px #97b6eb;
+    background-color: #5c93f3;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+.tempDet .weather{
+    margin: 10px 20px;
+    color: white;
+}
+.tempDet .weather h4{
+    margin: 0;
+}
+.tempDet .weather img{
+    width: 90px;
+    height: 90px;
+    /* animation: clock 60s linear infinite; */
+}
+@media (prefers-reduced-motion: no-preference) {
+    .tempDet {
+      animation-name: wipe-enter;
+      animation-duration: 0.4s;
+      animation-iteration-count: 1;
+    }
+  }
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+@keyframes  clock {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+transform: rotate(360deg);
+    }
+}
+.tempDet .temp h1{
+    color: white;
+    margin: 0px 10px;
+    font-size: 60px;
+}
+.tempDet .temp span{
+    color: white;
+    font-weight: bold;
+}
+
+
+/*making responsive using using media query*/
+@media screen and (max-width:360px){
+    .tempDet .weather img{
+         width: 70px;
+         height: 70px;
+    }
+}
